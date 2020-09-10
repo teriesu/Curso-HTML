@@ -46,3 +46,14 @@ Padding:
 	
 	El elemento inline manda adelante al elemento que lo posee, además de esto los elementos que
 	Están por encima de otro no interactuan con el espacio de pading, por lo tanto se sobreponen
+_______________________________________________________________
+
+Bordes:
+	Se encuentran entre el borde y el padding 
+
+	Los estilos más comunes son:
+		solid
+		double
+		dashed
+		dotted
+		none (desaparece)
