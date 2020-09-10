@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+}
+.caja1{
+	background: #aa151b;
+	width: 300px;
+	height: 100px;
+}
+.caja2{
+	background: #f1bf00;
+	width: 200px;
+	height: 100px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	/*margin: 20px 20px 20px 20px; (arriba, derecha, abajo
+	izquierda (sentido horario [como padding ]))*/
+	display: inline-block;
+}
+.caja3{
+	background: #aa151b;
+	width: 300px;
+	height: 100px;
+	display: inline-block;
+}
+.caja4{
+	background: #aa151b;
+	width: 3	00px;
+	height: 100px;
+}

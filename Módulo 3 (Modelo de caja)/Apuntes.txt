@@ -57,3 +57,14 @@ Bordes:
 		dashed
 		dotted
 		none (desaparece)
+_______________________________________________________________
+
+Margin:
+	Establecer la cantidad de espacio que rodea a un elemento, quedan fuera de cualquier frontera
+	Color transparente
+	
+	Ayudan a psosicionar los elementos en un lugar determinado de una página o proporcionar espaciamiento
+
+	Se pueden asignar valores negativos para superponer imágenes
+
+	Elementos con display inline-block no reconocen márgenes superior e inferior con valor negativo
