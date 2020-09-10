@@ -1,0 +1,26 @@
+body{
+	margin: 0;
+}
+.border1{
+	background:orange;
+	width: 300px;
+	height: 200px;
+	border: 8px solid rgb(0,0,255);/*ancho, estilo y color*/
+}
+.border2{
+	background:red;
+	width: 300px;
+	height: 200px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: green;
+}
+.border3{
+	background: orange;
+	width: 300px;
+	height: 200px;
+	border-top: 10px solid red;
+	border-right: 15px dotted blue;
+	border-bottom: 10px double green;
+	border-left: 15px dashed yellow;
+}

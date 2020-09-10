@@ -1,0 +1,104 @@
+Doctype: instrucción al principio (entender la versión de HTML)
+	para HTML5 <!DOCTYPE html>
+
+Elementos: <elemento> aquí va el elemento </elemento>
+
+	EJEMPLO:
+		tenemos un elemento (elemento p)
+		pueden ser:
+		<p id="parrafo">Caracteres p</p>
+		<p id="parrafo"><!--Comentarios--> p</p>
+		<p id="parrafo"><strong>Elementos </Strong></p>
+	Vacíos:
+		modelo de contenido no le permite tener ningún contenido, pero puede tener atributos (solo tiene elementos vacíos)
+		no tiene etiqueta de cierre 
+		
+		EJEMPLO:
+			<br> **salto de linea
+			<img src = "Ubicación de la imagen">
+	No vacío:
+		modelo de contenido tiene etiqueta de inicio o cierre, puede tener o no contenido
+		
+		EJEMPLO:
+			<p> Caracteres </p>
+			<span></span>
+
+ETIQUETAS NO DISTINGUEN MAYÚSCULAS O MINUSCULAS
+
+Atributo vacío:
+	
+	EJEMPLO:
+		<p id> Caracteres </p>
+Atributo sin comillas:
+	
+	EJEMPLO:
+		<p id=parrafo> Caracteres </p> **Solo se escribe si no ha espacios en blanco
+
+Atributo comillas simples o dobles (da igual):
+	
+	EJEMPLO:
+		<p id="parrafo"> Caracteres </p> **Solo se escribe si no ha espacios en blanco
+
+COMENTARIOS: 
+	
+	EJEMPLO:
+		<!--Este es un comentario-->
+___________________________________________________________________________________________________________________________________
+
+Elementos estructurales (HTML4)
+
+	div:
+		contenedor para agrupar secciones de contenido en bloque
+	span:
+		contenedor para agrupar secciones de contenido en linea
+
+	Elementos condisplay block:
+
+		-Header
+		-Article
+		-Section
+		-Aside
+		-Footer
+____________________________________________________________________________________________________________________________________
+Elementos estructurales (HTML5 [el que uso])
+
+	header: 
+		Contiene el encabezado de la página web
+	nav: 
+		Menú de navegación u otras funcionalidades de navegación de la página web
+	Article: 
+		Piezas individuales de contenido (posts individuales o noticias individuales)
+	Section: 
+		Usado para agrupar diferentes areas por funciones o dif articulos por tema (se puede usar dentro de article)
+	Aside:
+		sección con contenido relacionado (sutilmente) con el contenido principal a su alrededor pero no es fundamental par el
+		flujo de la página
+	Footer:
+		Contiene el pie de página
+____________________________________________________________________________________________________________________________________
+
+Elementos de frase: Añaden información estructural y semántica al texto (se comportan como elementos en linea)
+
+	EM:
+		Añade enfasis al texto (cursiva)
+	Strong: 
+		Añade un énfasis mas fuerte
+
+Elemento de encabezado:
+	Navegador asígna un tamaño diferente en orden decreciente
+
+	EJEMPLO: 
+		<h1>Encabezado 1</h>
+		<h2>Encabezado 2</h>
+		<h3>Encabezado 3</h>
+		<h4>Encabezado 4</h>
+____________________________________________________________________________________________________________________________________
+
+Enlaces:
+
+	direccionar al usuario a otra página de nustro sitio web, páginas web externas o elementos multimedia, correos electrónicos
+	recurso para descargar, etc...
+
+	<a href="https://devcode.la/">Mi primer enlace</a>
+
+	NO COLOCAR ELEMENTOS DE NIVEL EN BLOQUE DENTRO DE ELEMENTOS DE NIVEL EN LINEA

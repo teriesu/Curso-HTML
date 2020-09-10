@@ -1,0 +1,10 @@
+div{
+	border: 1px solid;
+	width: 100px;
+	height: 100px;
+	display: inline-block; /*todos los elementos div se ubican en la misma linea
+	aunque normalmente  (por ser tipo bloque) ocupan todo el ancho del navegador*/
+	/*display: inline;*//*realiza lo mismo que el anterior pero los pone uno pegado al
+	otrom pero hace inutil width y height*/
+	/*display: none;*/ /*oculta los elementos al navegador*/
+}

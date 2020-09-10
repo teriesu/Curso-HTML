@@ -1,0 +1,22 @@
+MODULO 1:
+	-Atributos 
+	-Identificadores
+	-Elementos estructurales
+		(div, span, header, article section, aside footer)
+	-Enfasis 
+	-Tamaño de encabezados
+	-enlaces
+	
+MODULO 2:
+	-selectores
+	-Pseudoclases
+		(cambiar de color cuando hay una interacción)
+		(fondos de colores)
+	-Pseudoelementos
+		(bofore, after, first letter)
+	-Selectores compuestos
+		(solo seleccionar ciertos elementos dentro de una clase padre)
+	-Colores
+	-Longitudes
+	-Porcentajes de longitudes
+MODULO 3:

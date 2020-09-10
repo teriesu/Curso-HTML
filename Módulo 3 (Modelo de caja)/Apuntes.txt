@@ -1,0 +1,48 @@
+Ancho y alto
+	
+	width: permite asignarle un ancho
+	height: permite asignarle un alto
+	
+	pueden tener longitudes y o porcentajes
+_______________________________________________________________
+
+Display:
+
+	Todo elemento tiene display por defecto
+	
+	se le pueden dar distintos valores como:
+		block
+		inline
+		inline-block
+		none
+	display: inline-block; 	(todos los elementos div se ubican en la misma linea aunque normalmente 
+				[por ser tipo bloque] ocupan todo el ancho del navegador)
+
+	display: inline;	(realiza lo mismo que el anterior pero los pone uno pegado al
+				otro pero hace inutil width y height)
+
+	display: none;		(oculta los elementos al navegador)
+_______________________________________________________________
+
+Modelo de caja:
+	
+	en el modelo de caja, cada elemento es una caja rectangular con:
+		ancho= width
+		alto= height
+		relleno=padding
+		borde=border
+		margen= margin 
+
+	(ver word para mayor información)
+______________________________________________________________
+
+Padding:
+	borde que rodea al contenido de la caja
+
+	en el programa del módulo se observa la caja con padding 40px;
+
+	Ya que el primer elemento (caja 1) posee el display block los demás elementos al agregarles
+	display-inline block se agrupan uno al lado de otro
+	
+	El elemento inline manda adelante al elemento que lo posee, además de esto los elementos que
+	Están por encima de otro no interactuan con el espacio de pading, por lo tanto se sobreponen

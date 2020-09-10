@@ -1,0 +1,31 @@
+body{
+	margin: 0; 
+}
+.caja1{
+	background: yellow;
+	width: 200px;
+	height: 100px;
+	padding-top: 40px; /*incrementa el padding superior en 40 px*/ 
+	padding-left: 40px;
+	padding-bottom: 40px;
+	padding-right: 40px;
+	/*padding: 40px 40px 40px 40px; (padding superior, derecho, inferior, izquierdo
+	respectivamente) */
+	/*padding: 40px 40px; (padding superior e inferior, derecho e izquierdo
+	respectivamente) */
+	/*padding: 40px; (padding de 40 px a cada borde)*/
+}
+.caja2{
+	background: blue;
+	width: 200px;
+	height: 100px;
+	display: inline;/*la propiedad width y heigh no afectan a un elemento con display
+	inline*/
+	padding: 20px;
+}
+.caja3{
+	background: red;
+	width: 200px;
+	height: 100px;
+	padding: 20px;
+}

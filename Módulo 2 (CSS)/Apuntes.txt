@@ -1,0 +1,356 @@
+Basado en selectores, propiedades y valores
+
+	selector{
+	propiedad1: valor1;
+	propiedad2: valor2;
+	propiedad3: valor3;
+	}
+
+siempre escribir las reglas en minusculas (por convención).
+	
+	.identificadordeclase1{
+
+	propiedad: valor1;
+	}
+
+primer carácter de un identificador no puede ser un número
+puede contener caracteres no permitidos si y solo si se usa \ antes
+selector corresponde a cualquier elemento dentro del documento (incluso clases) o cualquier id
+
+Propiedades:
+	Característica escrita en inglés a la cual se le asigna un valor para poder cambiar el aspecto o estilo de un elemento
+
+	selector{
+	color: valor;
+	background: valor;
+	font-family: valor;
+	font-size: valor;
+	}
+___________________________________________________________________________________________________________________
+
+Tipos de selectores:
+	
+	selectordeelemento{		.selectordeclase{		#selectordeid{
+	propiedad: valor;		propiedad: valor;		propiedad: valor;
+	}				}				}
+
+	
+	selector universal:
+	*{
+	propiedad: valor
+	}
+___________________________________________________________________________________________________________________
+	
+	Pseudoclases:
+		 
+		EJEMPLO:
+		(:LINK y :VISITED)
+			Asumiendo que existe el siguiente elemento
+		HTML:
+
+			<h1 class = "miprimeraclase"> Pseudoclases :link y :visited </h1>
+			<a target="https://devcode.la"> En este ejemplo miraremos como funcionan las pseudoclases
+			:link y :visited</a>
+		CSS:
+			a:link{
+			color: yellow<!--cambia el color del link por defecto (azul) -->
+			}
+			a:visited{
+			color: olive<!--cambia el color del link visitado por defecto (morado) -->
+			}
+		
+		(:HOVER :ACTIVE :FOCUS)
+		
+		HTML:
+			
+			:focus<h1 Pseudo clases :hover, :active y :focus </h1>
+			<form>
+			  <fieldset>
+			    <legend>Datos personales</legend>
+			    Nombres:<input type="text" />
+			    Apellidos:<input type="text" />
+			  </fieldset>
+			</form>
+		CSS:
+			legend:hover{
+			color: red;<!--al pasar encima del elemento legend el texto cambia de color a rojo-->
+			}
+			legend:active{
+			color: blue<!--hacer click en el elemento legend el texto cambia de color a azul-->
+			}
+			input:focus{
+			color: orange;<!--cuando se trabaja un elemento (se está escribiendo) se torna de color naranja-->
+			}
+		
+		(:)
+		
+		HTML:
+			<u1>
+			  <li>Primer hermano</li>
+			  <li>Segundo hermano</li>
+			  <li>Tercer hermano</li>
+			  <li>Cuarto hermano</li>
+			  <li>Último hermano</li>
+			</u1>
+		CSS:
+			li:first-child{
+			  background: yellow;<!--Representa el primer elemento de una lista de elementos hermanos (li) que
+			  se encuentran dentro de un elemento padre(u1) -->
+			}
+			li:last-child{
+			  background: red; <!--Al ultimo elemento de la lista le asigna fondo rojo-->
+			}
+			li:nth-child(2n){
+			  background: orange; <!--segundo y cuarto (debido a que son pares) color naranja-->
+			}
+			li:ntj-child(3n){
+			  background: olive; <!--Al tercer elemento fondo rojo (debido a que es múltiplo de 3)-->
+			}
+___________________________________________________________________________________________________________________
+
+	Pseudoelementos:
+
+		Permite acceder a información del documento no accesible de otra manera
+		Permite referirse a contenidos no existentes en el documento
+		
+		EJEMPLO:
+		
+		HTML:
+			<h1 class= "titulo"> Pseudoelementos</h1>
+			<p>
+		  	  First-line y first letter. Lorem ipsum dolor sit amet, 
+		  	  consectetur adipiscing elit, sed do eiusmod
+		  	  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+		  	  minim veniam,
+		  	  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+		  	  commodo 
+		   	  consequat. Duis aute irure dolor in reprehenderit in voluptate
+		  	  velit esse 
+		  	  cillum dolore eu fugiat nulla pariatur.
+			</p>
+		CSS:
+			body{
+			  backbround: #2c3e50;
+			  margin: 30px 30px;
+			  font-family: trebuchet ms;
+			  color: white;
+			}
+			.titulo{
+			   text-align: center;
+			}
+			h1::Before{
+			content: "Before"; <!--Agrega la palabra "Before" antes de lo escrito en el elemento h1-->
+			background: orange; <!--cambia el background a color naranja, solo en el elemento agregado>
+			}
+			h1::after{
+			content: "After"; <!--Agrega la palabra "After" después de lo escrito en el elemento h1-->
+			background: orange; <!--cambia el background a color naranja, solo en el elemento agregado>
+			}
+			p::first-letter{
+			font-size: 36px; <!--Asigna 36 pixeles de tamaño a la primera letra-->
+			color: gold; <!--Cambia a color dorado la primera letra-->
+			}
+			p::first-line{
+			color: crimson; <!--Cambia el color de la primera liea carmesí-->
+			}
+ ___________________________________________________________________________________________________________________
+
+	Combinación de selectores:
+		
+		EJEMPLO:
+		
+		HTML:
+			<u1>
+			  <li>Objeto 1</li>
+			  <li>Objeto 2</li>
+			    <ol>
+			      <li>Objeto anidado 1</li>
+			      <li>Objeto anidado 2</li>
+			    </ol>
+			  </li>
+			  <li>Objeto 3<li>
+			</u1>
+		CSS:
+			____________________________________
+			ul li{
+			margin-left: 40px;  <!--Asigna 40 píxeles de margen a todos los elementos "li" dentro de "ul"-->
+			}
+			____________________________________
+			ul > li{
+			margin-left: 40px;  <!--Asigna 40 píxeles de margen a todos los elementos "li" descendientes 
+			de "ul" (Exluye a los que están dentro del elemento ol)-->
+			}
+		
+		EJEMPLO:
+		
+		HTML:
+			<div>
+			  <p>Párrafo 1</p>
+			  <p>Párrafo 1</p>
+			  <div>Caja</div>
+			  <p>Párrafo 1</p>
+			</div>
+		CSS: 
+			p + p{ <!--(Combinador de hermano adyacente p+p)-->
+			background: yellow;<!--Segundo elemento "p" se torna de background amarillo-->
+			}
+			<!--En elemento hermano adyasente se toama el elemento hermano que está inmediatamente al lado
+			del primer elemento p, por lo tanto el primer elemento p no puede ser seleccionado ya que no 
+			tiene ningún elemento p antes y el 3 tampoco-->
+			
+			____________________________________
+			p ~ p{ <!--(Combinador hermano general)-->
+			background: yellow;<!--Segundo elemento y tercer elemento "p" se tornan de background amarillo-->
+			}
+			<!--En elemento hermano general no es necesario que esté seguido del otro, por ello el parrafo
+			3 también cuenta con fondo amarillo-->
+___________________________________________________________________________________________________________________
+
+	Colores:
+	
+	https://color.adobe.com/es/create/color/color-wheel/
+
+		EJEMPLO:
+		
+		HTML:
+			<p>Representación de colores por keywords</p>
+
+		CSS:
+			(Hexadecimal)--> #00ff00
+		p{
+		  color: #ff0000; <!--Color rojo-->
+		  color: #00ff00; <!--Color verde-->
+		  color: #0000ff; <!--Color azul-->
+		}
+		_____________________
+		EJEMPLO:
+		
+		HTML:
+			<p class = "colorrgb">
+			Color RGB
+			</p>
+			<p class = "colorrgba">
+			ColorRGBA
+			</p>
+
+		CSS:
+			(RGB y RGBa)
+		.colorrgb{
+		  color: rgb(255, 0, 0); <!--Color rojo-->
+		  color: rgb(0, 255, 0); <!--Color verde-->
+		  color: rgb(0 , 0, 255); <!--Color azul-->
+		} 
+		.colorrgba{
+		  color: rgba(0, 0, 255, .4); <!--Color azúl, con transparencia-->
+		}
+		_____________________
+		EJEMPLO: 
+		
+		HTML:
+			<p class = "colorhs1">
+			Color HSL
+			</p>
+			<p class = "colorhsla">
+			Color HSLa
+			</p>	
+		CSS:
+			(HSL y HSLa)
+		.colorrgb{
+		  color: hsl(0, 100%, 50%); <!--0 de matiz, 100% saturación, 50% luminosidad (rojo)-->
+		  color: rgb(120, 100%, 50%); <!--Color verde-->
+		  color: rgb(240 , 100%, 50%); <!--Color azul-->
+		} 
+		.colorrgba{
+		  color: rgba(240, 100%, 50%, .4); <!--240 de matiz, 100% saturación, 50% luminosidad, 
+		  40% opacidad, mismo color que el ultimo de RGBa-->
+		}
+___________________________________________________________________________________________________________________
+	
+	Longitudes:
+
+		1in=2,54cm
+		1px=1/96in
+		
+		EJEMPLO:
+		
+		unidades relativas:
+		
+		HTML:
+			<!DOCTYPE html>
+			<html>
+			  <head>
+			    <title></title>
+			  </head>
+			  <body>
+			    <span class="unidadrem">rem</span>
+			  </body>
+			</html>
+		CSS:
+			html{
+			font-size: 40px;
+			}
+			.unidadrem{
+			font-size=4rem;<!--tamaño relativo al tamaño html 4rem=(4x fontsize del html [40px])--> 
+			color:crimson;
+			}
+		_____________________
+		
+		HTML:
+			<!DOCTYPE html>
+			  <body>
+			    <div class="caja 1">
+			      50
+			    </div>
+			    <div class="caja 2">
+			      <p>Tamaño de fuente heredado</p>
+			    </div>
+			  </body>
+			</html>
+		CSS:
+			.caja1{
+			background:green;
+			font-size: 50px;
+			height:50px;
+			width: 1em; <!--ancho de 50px (la unidad em depende del tamaño de fuente del elemento)--> 
+			}
+			.caja2{
+			font-size: 20px;
+			}
+			p{
+			font.size: 1em;<!--tamaño 40px ya que toma el tamaño del elemento de fuente del elemento
+			padre más cercano-->
+			}
+___________________________________________________________________________________________________________________
+	
+	Porcentaje
+	
+	EJEMPLO:
+		<div class = "level1">
+		  <div class = "level2">
+		    <div class = "level3">
+		      20px
+		    </div>
+		    40px
+		  </div>
+		  80px
+		</div>
+	
+	CSS:
+		.level1{
+		width: 400px;
+		height: 400px;
+		background: red;
+		font-size: 80px;
+		}
+		.level2{
+		background: green;
+		width: 50%;
+		height: 50%;
+		font-size: 50%;
+		}<!--elemento de lvl2 ocupa ahora el 50% que el lvl 1 (es proporcional al elemento padre)-->
+		.level3{
+		background: blue;
+		width: 50%;
+		height: 50%;
+		font-size: 50%;
+		}<!--elemento de lvl3 ocupa ahora el 50% que el lvl 2 (es proporcional al elemento padre)-->
