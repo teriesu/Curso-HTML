@@ -1,0 +1,14 @@
+Position:
+
+	Tipo de posicionamiento usado por un elemento dentro de sus elementos padres
+	depende de varios valores
+
+____________________________________________________________________________________
+Static:
+	valor por defecto de posición, no está posicionado
+	no reconoce:
+		top
+		right
+		left
+		bottom
+		z-index

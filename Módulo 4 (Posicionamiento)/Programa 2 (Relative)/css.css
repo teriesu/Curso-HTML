@@ -1,0 +1,16 @@
+.Titulo{
+	background: gold;
+}
+.Descripcion{
+	background: green;
+	position: relative;
+	/*Si se asignan valores de 0 a estas 4 propiedades estará en su posición por defecto*/
+	top: 40px;	/*se desplaza 40 px hacia abajo, por encíma de otros elementos*/
+	bottom: 0; /*de abajo a arriba*/
+	right: 0; /*derecha a izquierda*/
+	left: 40px;
+	/*prevalecen left y top sosbre rigth y botom*/
+}
+.Autor{
+	background: purple;
+}
