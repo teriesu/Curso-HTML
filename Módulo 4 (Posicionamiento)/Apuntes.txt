@@ -1,4 +1,4 @@
-Position:
+﻿Position:
 
 	Tipo de posicionamiento usado por un elemento dentro de sus elementos padres
 	depende de varios valores
@@ -12,3 +12,34 @@ Static:
 		left
 		bottom
 		z-index
+____________________________________________________________________________________
+Relative:
+	
+	Se ven las propiedades top, right bottom left
+	prevalecen left y top sosbre rigth y botom
+____________________________________________________________________________________
+Absolute:
+	
+	El componente se va fuera del flujo del documento
+
+	Se da en relación al primer elemento padre más cercano que no tenga valor STATIC
+	
+	Si no existe se toma la ventana del navegador
+
+	para el exterior se considera el padding pero no margin
+	
+	Para la caja interior se considera el padding y el margin
+____________________________________________________________________________________
+Fixed:
+
+	Se parece al absolute
+	
+	Posiciona el elemento en relacion a la ventana del navegador
+____________________________________________________________________________________
+Float:
+	
+	Versatil, distintos usos.
+	
+	En el ejempo queremos que aside sea una barra lateral (Para eso usamos float)
+	
+	Permite tomar un elemento, removerlo del flujo de la página y ubicarlo al lado izquierdo o derecho. 
