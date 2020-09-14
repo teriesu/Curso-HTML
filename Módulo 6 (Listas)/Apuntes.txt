@@ -1,4 +1,4 @@
-Listas desordenadas:
+﻿Listas desordenadas:
 
 	Elementos cuyo orden no es importante
 	
@@ -58,5 +58,9 @@ List-style-image
 	
 	En vez de cuadrados, o simbolos usa imágenes
 _________________________________________________________________________________
-
+List-style-position:
+	
+	keywords:
 		
+		inside (los numeros de la lista ordenada ahora están dentro del texto)
+		Outside (valor por defecto)
