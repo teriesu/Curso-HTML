@@ -1,0 +1,14 @@
+p{
+	font-size: 48px;
+}
+.familyname{
+	font-family: impact, Arial;
+}
+.genericfamily{
+	font-family: sans-serif; /*Familia genérica (planas, proporcionales
+	y pocas diferencias(se asigna al azar))*/
+	/*font-family: serif; proporcionales y mayor variación entre trazos gruesos y finos*/
+	/*font-family: monospace; Consolas, courier New (mismo ancho)*/
+	/*font-family: fantasy; Decorativas (horribles)*/
+	/*font-family: cursive; Comic sans... horrenda*/
+}

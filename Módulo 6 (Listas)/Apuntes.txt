@@ -1,0 +1,22 @@
+Listas desordenadas:
+
+	Elementos cuyo orden no es importante
+	
+	solo se cierra todo en un ul y dentro cada elemento es un li
+_________________________________________________________________________________
+Listas ordenadas:
+	
+	Elementos cuyo orden importa
+
+	Elemento Ol que engloba todos los items y cada elemento tiene su objeto Li
+
+	Se puede asignar el numero de inicio (incluyendo los numeros negativos):	
+		<ol start = "15">
+			<li>sadasdsa</li>
+		</ol>
+	
+	Se puede ordenar al contrario (en vez de start se escribe reverse)
+	
+	Se pueden saltar valores colocando a un elemento li:
+		<li value = "10"> sadasdas</li>
+_________________________________________________________________________________
