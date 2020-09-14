@@ -1,0 +1,71 @@
+Font-size:
+	
+	Acepta tamaños absolutos y relativos
+	mm, px, em, rem, %
+	
+	Tamaños determinados Asignados por el navegador como:
+		xx-small
+		x-small
+		small
+		medium
+		large
+		x-large
+		xx-large
+		larger
+		smaller
+___________________________________________________________________________________
+Font-family:
+	
+	Se isa el primer tipo de letra si la reconoce, si no intenta reconocer el segundo valor y
+	así sucesivamente.
+	
+	Existen diversas familias, de las cuales se escoge un valor aleatorio
+___________________________________________________________________________________
+Font-weight:
+	
+	acepta valores entre 100 y 900 en intervalos de 100
+	
+	keywords
+		
+		Normal;
+		Bold;
+	
+	tamaños relativos
+		
+		Bolder;
+		lighter;
+___________________________________________________________________________________
+Font-style:
+	
+	No todas las font family tienen los estilos de fuente
+	
+	keywords:
+
+		normal 
+		italic (inclinado)
+		oblique (más inclinado)
+___________________________________________________________________________________
+font-height:
+	
+	elemento p tiene display block.
+
+	TAMAÑO DEL INTERLINEADO
+	
+	se pueden usar longitudes relativas, absolutas, porcentajes
+
+	keywords
+
+	Si se usan keywords estas se toman con valores relativos al tamaño de fuente
+___________________________________________________________________________________
+font:
+
+	Propiedad resume otras propiedades:
+		
+		font-style
+		font-variant
+		font-weight
+		font-size
+		line-height
+		font-family
+	
+	

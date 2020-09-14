@@ -1,0 +1,10 @@
+h1{
+	font: 24px Impact; /*(Tamaño, familia)Orden obligatorio
+	Line height puede ser cambiado opcionalmente agregando de´pues
+	"|" o "/" */
+
+}
+p{
+	font: bold oblique 16px/1 Verdana;
+}/*Se pueden cambiar las demás propiedades siempre y cuando estén
+ antes del tamaño de fuente*/
