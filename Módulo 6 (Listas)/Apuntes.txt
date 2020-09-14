@@ -20,3 +20,43 @@ Listas ordenadas:
 	Se pueden saltar valores colocando a un elemento li:
 		<li value = "10"> sadasdas</li>
 _________________________________________________________________________________
+Listas descriptivas:
+	
+	Usadas para crear listas de terminos con descripciones:
+		glosarios o dicionearios
+
+	Elementos indispensables
+		DL:
+		DT: para cada térimo
+		DD: definición
+_________________________________________________________________________________
+Listas anidadas:
+	
+	Listas dentro de listas
+_________________________________________________________________________________
+Style-type
+
+	definir estilo de viñeta a cada item de una lista (cuadrados, numerosromanos
+	etc...)
+	
+	keywords:
+		disc (defecto: circulo fondo negro)
+		none (elimina el estilo sin desplazar los items)
+		square (cuadrados)
+		circle (circunferencias vacías)
+		decimal (numeros)
+		decimal-leading-zero (decimales con 0 al principio [01, 02, 03])
+		lower-roman (romanos en minuscula)
+		uper-roman (romanos mayuscula)
+		lower-greek (griego minúcula)
+		lower-alpha, lower latin (alfabeto minuscula)
+		uper-alpha, uper latin (alfabeto mayúscula)
+		Armenian (¿Armenio?)
+		georgian (Simbolos que no conozco)
+_________________________________________________________________________________
+List-style-image
+	
+	En vez de cuadrados, o simbolos usa imágenes
+_________________________________________________________________________________
+
+		
