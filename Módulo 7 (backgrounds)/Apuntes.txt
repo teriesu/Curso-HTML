@@ -1,0 +1,57 @@
+background-color:
+	
+	Afecta toda la caja, incluyendo margen y padding
+_____________________________________________________________________
+background-image:
+	
+	Asigna una imagen de fondo sobre el color
+	
+	Background-size Ajusta el tamaño de la imagen de fondo
+_____________________________________________________________________
+background-repeat:
+	
+	kewords:
+	
+		repeat-x (repite la imagen solo en el eje x de iz a derecha)
+		repeat-y (repite la imagen en el angulo y)
+		no-repeat (no se repite la imagen)
+		repeat (repite en X y en Y (defecto))
+		space (repite la imagen COMPLETA si no alcanza se deja un espacio transparente)
+		round (alarga la imágen en x y y para que no se repita en x o en y de forma incompleta)
+	
+		repeat no-repeat; (primer valor es X y segundo es eje Y)
+_____________________________________________________________________
+background-attachment:
+	
+		kwywords:
+		
+			fixed (al scrolear el fondo no se mueve [por defecto])
+			local (al scrolear el background se fija al contenido del elemento)
+			Scroll (se fija al elemento [En relación al scroll global])
+_____________________________________________________________________
+background-position:
+	
+	keywords:
+		top (al centro en medio)
+		rigt (centro derecha)
+		bottom
+		left
+		center (centro total)
+	
+	Longitudes:
+	
+		20px; se cuenta desde izquierda
+		10%; se considera horizontal
+	
+	keywords combinaciones:
+
+		rigth bottom; (se puede invertir)
+	
+	solo longitudes:
+		
+		100px 50px; (izquierda a derecha), (arriba a abajo)
+		
+	se puede combinar keywords y longitudes:
+		
+		rigth 30px;
+		

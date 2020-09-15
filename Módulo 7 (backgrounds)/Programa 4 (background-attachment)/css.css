@@ -1,0 +1,13 @@
+body, h1{
+	margin: 0;
+}
+section{
+	text-align: center;
+	width: 300px;
+	height: 600px;
+	margin: 0;
+	overflow-y: scroll; /*scrollbar vertical*/
+	background-color: lightgreen;
+	background-image: url(https://generacionxbox.com/wp-content/uploads/2020/04/assassins-creed-valhalla-generacionxbox-1.jpg);  
+	background-attachment: local;
+}
